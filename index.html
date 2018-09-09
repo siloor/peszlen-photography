@@ -1,11 +1,18 @@
 ---
+my_array:
+- name: Milan
+  id: 1
+- name: Lisa
+  id: 2
+- name: Adam
+  id: 3
 ---
 
 <!DOCTYPE html>
 <html class="wide" lang="en" dir="ltr">
 <head>
   <!-- Site Title-->
-  <title>{{ "Home2" }}</title>
+  <title>Home</title>
   <meta name="format-detection" content="telephone=no">
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,6 +29,9 @@
   <![endif]-->
 </head>
 <body>
+<!--{% for item in page.my_array %}
+<div>{{ item.id }} {{ item.name }}</div>
+{% endfor %}-->
 <!-- Page-->
 <div class="page bg-image novi-background">
   <div class="preloader">
