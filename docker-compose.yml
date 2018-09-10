@@ -1,8 +1,8 @@
 web:
   image: starefossen/github-pages
   ports:
-  - 4000:4000
+    - 4000:4000
   working_dir: /usr/src/app
   volumes:
-  - .:/usr/src/app
+    - .:/usr/src/app
   command: jekyll serve --future --incremental --watch --force_polling -H 0.0.0.0 -P 4000
